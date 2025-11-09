@@ -19,15 +19,15 @@ app.use(express.json());
 app.use(express.static('public'));
 
 // Configuration
-const apikey = 'isidewek';
-const capikey = 'isidewek';
-const domain = 'isidewek';
+const apikey = 'ptla_ZWWp3thSgs3EPhCetlAog9FODc3jgUKll9XmgS6A42U';
+const capikey = 'ptlc_iSUEAdSsxYB8I4OHf5oKjmmjtxNH6Ko2eLBpaWOMrRh';
+const domain = 'https://panel.hostkita.xyz';
 const nestid = '5';
-const egg = '15';
+const egg = '1';
 const loc = '1';
-const gmailadmin = 'admin@gmail.com'; // Admin email that won't be deleted
-const telegramBotToken = 'isidewek';
-const adminTelegramId = 'isidewek';
+const gmailadmin = 'web@gmail.com'; // Admin email that won't be deleted
+const telegramBotToken = '7909284461:AAFti7AIEMplhyGPE9iUtq97ak5kB3MsZ-I';
+const adminTelegramId = '7860533885';
 
 // In-memory storage
 let servers = [];
@@ -57,8 +57,8 @@ async function sendTelegramMessage(chatId, message) {
 app.post('/api/login', (req, res) => {
   const { username, password } = req.body;
 
-  if (username === 'isidewek' && password === 'isidewek') {
-    res.json({ success: true, user: { username: 'isidewek', role: 'admin' } });
+  if (username === 'web' && password === '1') {
+    res.json({ success: true, user: { username: 'web', role: 'admin' } });
   } else {
     res.status(401).json({ error: 'Invalid credentials' });
   }
